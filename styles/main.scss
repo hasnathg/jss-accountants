@@ -1,0 +1,7 @@
+
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/* example globals */
+:root { --radius: #{$radius}; }
+.section { @include container-x; padding-block: 4rem; }
