@@ -1,9 +1,8 @@
-// app/components/TailoredExpertise.jsx
 import Image from "next/image";
 
 export default function TailoredExpertise() {
   return (
-    <section className="section border-b">
+    <section className="section ">
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* Left: copy */}
         <div>
@@ -22,7 +21,7 @@ export default function TailoredExpertise() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 inline-block h-2 w-2 rounded-full bg-amber-500" />
-              <span><strong>Grow & optimise:</strong> cash flow, KPIs, management reports.</span>
+              <span><strong>Grow & optimize:</strong> cash flow, KPIs, management reports.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 inline-block h-2 w-2 rounded-full bg-amber-500" />

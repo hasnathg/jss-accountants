@@ -1,38 +1,5 @@
 export default function Hero() {
   return (
-    // <section
-    //   className="relative min-h-[70vh] md:min-h-[80vh] flex items-center"
-    //   style={{
-    //     backgroundImage: 'url("/images/hero.jpg")',
-    //     backgroundSize: "cover",
-    //     backgroundPosition: "center",
-    //   }}
-    // >
-    //   {/* dark overlay for contrast */}
-    //   <div className="absolute inset-0 bg-black/40" />
-
-    //   {/* content */}
-    //   <div className="relative z-10 max-w-6xl mx-auto px-4 w-full pt-24">
-    //     {/* box where you can add text/buttons */}
-    //     <div className="max-w-xl text-amber-600 rounded-2xl p-6 shadow">
-    //       <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-    //         Stress-free Accounts &amp; Tax for Small Businesses
-    //       </h1>
-    //       <p className="mt-4 text-amber-500">
-    //         Year-end accounts, VAT, payroll, and advisory—done right and on time.
-    //       </p>
-    //       <div className="mt-6 flex gap-3">
-    //         <a href="/contact" className="px-5 py-2 rounded-tl-2xl rounded-br-2xl bg-slate-600 text-white hover:opacity-70">
-    //           Book a free consultation
-    //         </a>
-    //         <a href="/services" className="px-5 py-2 rounded-tl-2xl rounded-br-2xl bg-slate-400 text-gray-900 border hover:bg-gray-50">
-    //           Our services
-    //         </a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
-
     <section
       className="relative min-h-[75vh] flex items-center"
       style={{
