@@ -1,6 +1,8 @@
 
 @use "./variables" as *;
 @use "./mixins" as *;
+@import "leaflet/dist/leaflet.css";
+
 
 /* example globals */
 :root { --radius: #{$radius}; }
