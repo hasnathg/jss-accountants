@@ -13,8 +13,8 @@ export default function Hero() {
         {/* optional amber eyebrow */}
         <p className="text-amber-400 font-semibold tracking-wide text-3xl">Trusted accountants in Buckinghamshire</p>
 
-        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-gray-200">
-          Stress-free Accounts &amp; Tax for Small,medium Businesses
+        <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-gray-200">
+          Stress-free Accounts &amp; Tax<br/> for Small and Medium Businesses
         </h1>
         <p className="mt-4 text-white/85 max-w-2xl">
           Year-end accounts, VAT, payroll, and advisory — done right and on time.

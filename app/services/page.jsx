@@ -43,6 +43,15 @@ function Icon({ name, className = "h-6 w-6" }) {
           <path d="M4 20V7M9 20V4M14 20v-6M19 20V9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
       );
+    case "selfassessment":
+      // document with a checkmark
+      return (
+        <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+          <path d="M7 3h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M14 3v5h5" fill="none" stroke="currentColor" strokeWidth="2"/>
+          <path d="M8.5 15.5l2 2 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      );
     case "tax":
       return (
         <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -131,6 +140,24 @@ const SERVICES = [
     ],
   },
   {
+    key: "selfassessment",
+    title: "Self Assessment",
+    intro:
+      "Straightforward, stress-free personal tax returns for individuals, directors and landlords. We gather what’s needed, complete the return, explain the result and file on time—optimising reliefs and avoiding penalties.",
+    points: [
+      "SA100 Self Assessment prepared & filed (online) with HMRC",
+      "Employment, self-employment, rental income, dividends & pensions covered",
+      "Capital Gains computations (e.g. property, shares) and allowances applied",
+      "Payments on account reviewed and reduced where appropriate",
+      "New to SA? Registration & UTR setup handled for you",
+      "Personal reliefs considered (Marriage Allowance, pension relief, etc.)",
+      "Deadline reminders (31 Jan filing/payment, 31 Jul payments on account)",
+      "File by 31 Oct (paper) or 31 Jan (online); we’ll remind you of each step",
+      "Prefer PAYE coding? File by 30 Dec (where eligible, tax < £3,000)",
+      "HMRC correspondence managed on your behalf",
+    ],
+  },
+  {
     key: "tax",
     title: "HMRC Tax Enquiries",
     intro:
@@ -161,7 +188,7 @@ export default function ServicesClient() {
   const [active, setActive] = useState(SERVICES[0].key);
   const contentRef = useRef(null);
 
-  // deep-link via hash (#payroll, etc.)
+  // deep-link via hash (#payroll, #selfassessment, etc.)
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash.replace("#", "") : "";
     if (hash && SERVICES.some((s) => s.key === hash)) setActive(hash);

@@ -8,6 +8,7 @@ const services = [
   { key: "reporting",   title: "Management Reporting" },
   { key: "tax",         title: "Tax Enquiries" },
   { key: "cashflow",    title: "Cash Flow Forecasting" },
+  { key: "selfassessment", title: "Self Assessment" },
 ];
 
 // inline SVGs (no extra deps)
@@ -58,6 +59,17 @@ function Icon({ name, className = "h-12 w-12 md:h-16 md:w-16" }) {
           <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
         </svg>
       );
+      
+
+
+  case "selfassessment":
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path d="M7 3h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
+      <path d="M14 3v5h5" fill="none" stroke="currentColor" strokeWidth="2"/>
+      <path d="M8.5 15.5l2 2 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    </svg>
+  );
     case "cashflow":
       return (
         <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
