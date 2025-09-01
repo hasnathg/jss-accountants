@@ -11,10 +11,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50 md:bg-black/40" />
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full pt-24">
         {/* optional amber eyebrow */}
-        <p className="text-amber-400 font-semibold tracking-wide">Trusted accountants in Buckinghamshire</p>
+        <p className="text-amber-400 font-semibold tracking-wide text-3xl">Trusted accountants in Buckinghamshire</p>
 
-        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-white">
-          Stress-free Accounts &amp; Tax for Small Businesses
+        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight text-gray-200">
+          Stress-free Accounts &amp; Tax for Small,medium Businesses
         </h1>
         <p className="mt-4 text-white/85 max-w-2xl">
           Year-end accounts, VAT, payroll, and advisory — done right and on time.

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t bg-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-600">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p>© {new Date().getFullYear()} JSS &amp; Co Accountants</p>
@@ -15,7 +15,9 @@ export default function Footer() {
             <span className="hidden md:inline text-gray-400" aria-hidden="true">|</span>
             <span>26 Thorney Lane South, Iver, Buckinghamshire, SL0 9AE</span>
           </p>
+          
         </div>
+        <p className="text-right font-bold text-gray-600">Developed by: Hasnath Karim</p>
       </div>
     </footer>
   );

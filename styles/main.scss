@@ -38,3 +38,22 @@
   .marquee__track { animation: none; }
 }
 
+/* === Basic prose for blog === */
+.blog-content {
+  color: #334155; /* slate-700-ish */
+  line-height: 1.75;
+
+  p { margin-top: 1rem; }
+  h2 { margin-top: 2rem; font-size: 1.5rem; color: #0f172a; font-weight: 600; }
+  h3 { margin-top: 1.5rem; font-size: 1.25rem; color: #0f172a; font-weight: 600; }
+  ul, ol { margin-top: 1rem; margin-left: 1.25rem; }
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
+  a { color: #0ea5e9; text-decoration: underline; }
+  blockquote {
+    margin-top: 1rem; padding-left: 1rem; border-left: 3px solid #e5e7eb; color: #1f2937;
+  }
+  code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 4px; }
+  pre { background: #0b1220; color: #f8fafc; padding: 1rem; border-radius: 12px; overflow: auto; }
+  img { border-radius: 1rem; display: block; margin: 1rem 0; max-width: 100%; height: auto; }
+}
